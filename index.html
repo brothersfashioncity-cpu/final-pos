@@ -108,7 +108,7 @@
 
         <!-- এডমিন থেকে কাস্টমার ভিউতে ফেরার বাটন -->
         <button id="back-to-customer-btn" onclick="switchToCustomer()" class="hidden px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-amber-400 flex items-center gap-1.5 transition">
-          <i class="fa-solid fa-arrow-left"></i> কাস্টমার পেজ
+          <i class="fa-solid fa-arrow-left"></i> কাস্টমার কর্নার
         </button>
       </div>
     </header>
@@ -118,7 +118,7 @@
       <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
         <div class="text-center mb-6">
           <span class="inline-block px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold mb-2">
-            🎉 কাস্টমার পুরস্কার যাচাইকরণ
+            🎉 আপনার পুরস্কার যাচাইকরুন
           </span>
           <h2 class="text-2xl font-bold text-white">আপনার কুপন কোড দিন</h2>
           <p class="text-sm text-slate-400 mt-1">মেসেজে পাওয়া ৪ সংখ্যার গোপন কোডটি নিচে লিখে পুরস্কার দেখুন</p>
@@ -204,7 +204,7 @@
           </div>
           <div>
             <label class="block text-xs text-slate-400 mb-1">মোবাইল নম্বর (একটি নম্বরে একবার)</label>
-            <input type="tel" id="cust-phone" placeholder="017XXXXXXXX" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white outline-none focus:border-amber-400" />
+            <input type="tel" id="cust-phone" placeholder="0170000000" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white outline-none focus:border-amber-400" />
           </div>
         </div>
 
@@ -218,7 +218,7 @@
         </div>
 
         <button onclick="generateCoupon()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition flex items-center justify-center gap-2">
-          <i class="fa-solid fa-wand-magic-sparkles"></i> অটো কুপন কোড ও মেসেজ তৈরি করুন
+          <i class="fa-solid fa-wand-magic-sparkles"></i> কুপন কোড ও মেসেজ তৈরি করুন
         </button>
 
         <!-- তৈরি হওয়া কুপন ও শেয়ার অপশন -->
@@ -283,16 +283,16 @@
 
       <!-- ট্যাব ৪: সেটিংস (টপ চলন্ত লেখা, কালার, শপ নাম ও পিন) -->
       <div id="admin-tab-settings" class="hidden bg-slate-900 border border-slate-800 rounded-2xl p-5 space-y-4">
-        <h3 class="text-base font-bold text-amber-400">ওয়েবসাইট ও চলন্ত লেখা সেটিংস</h3>
+        <h3 class="text-base font-bold text-amber-400">ওয়েবসাইট ও লেখা সেটিংস</h3>
 
         <div>
-          <label class="block text-xs text-slate-400 mb-1">উপরের চলন্ত লেখা (Marquee Text)</label>
+          <label class="block text-xs text-slate-400 mb-1">উপরের লেখা (Marquee Text)</label>
           <textarea id="set-marquee-text" rows="3" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-xs text-white outline-none focus:border-amber-400"></textarea>
         </div>
 
         <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="block text-xs text-slate-400 mb-1">চলন্ত লেখার কালার</label>
+            <label class="block text-xs text-slate-400 mb-1">লেখার কালার</label>
             <div class="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-3 py-2">
               <input type="color" id="set-marquee-color" class="w-8 h-8 rounded cursor-pointer bg-transparent border-0" />
               <span id="marquee-color-hex" class="text-xs text-slate-300">#facc15</span>
@@ -309,17 +309,17 @@
 
         <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="block text-xs text-slate-400 mb-1">শপের নাম</label>
+            <label class="block text-xs text-slate-400 mb-1">Shop Name</label>
             <input type="text" id="set-shop-name" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white outline-none" />
           </div>
           <div>
-            <label class="block text-xs text-slate-400 mb-1">এডমিন পিন কোড</label>
+            <label class="block text-xs text-slate-400 mb-1">Pin Code</label>
             <input type="text" id="set-admin-pin" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white outline-none" />
           </div>
         </div>
 
         <button onclick="saveSettings()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm">
-          সব সেটিংস সেভ করুন
+          All Save
         </button>
       </div>
     </section>
@@ -328,7 +328,7 @@
   <!-- ফুটার -->
   <footer class="py-5 text-center border-t border-slate-800/70 mt-10">
     <p id="secret-footer-trigger" onclick="handleSecretTap()" class="text-xs text-slate-500 select-none cursor-pointer">
-      ©2027-Brother's Fashion City
+      ©2027-Brother's Fashion City| website: bfcbd.shop
     </p>
   </footer>
 
@@ -339,7 +339,7 @@
         <i class="fa-solid fa-shield-halved text-xl"></i>
       </div>
       <h3 class="text-lg font-bold text-white">Admin লগইন</h3>
-      <p class="text-xs text-slate-400">গোপন পিন কোড দিন (ডিফল্ট: 1234)</p>
+      <p class="text-xs text-slate-400">গোপন পিন কোড দিন (যেমন:1234)</p>
       <input type="password" id="admin-pin-input" placeholder="••••" class="w-full text-center text-xl tracking-widest bg-slate-950 border border-slate-700 rounded-xl py-2.5 text-white outline-none focus:border-amber-400" />
       <p id="pin-error" class="hidden text-xs text-rose-400">ভুল পিন কোড! আবার চেষ্টা করুন।</p>
       <div class="flex gap-2">
@@ -354,7 +354,7 @@
     const defaultSettings = {
       shopName: "Arafat Cosmatics",
       adminPin: "1234",
-      marqueeText: "ব্রাদার্স ফ্যাশন সিটি, মাল্টি ব্রান্ড শো-রুম, এখানে পাবেন দেশের নাম্বার ওয়ান সকল ব্রান্ড এর তৈরি পোষাক। ঠিকানাঃ কর্তিমারী বাজার( গ্রামীণ ব্যাংক এর নিচ তলা), রৌমারী। যোগাযোগঃ ০১৭০০-৭৮৭০৯২। ওয়েব সাইটঃ bfcbd.shop। ধন্যবাদ",
+      marqueeText: "ব্রাদার্স ফ্যাশন সিটি, মাল্টি ব্রান্ড শো-রুম, এখানে পাবেন দেশের নাম্বার ওয়ান সকল ব্রান্ড এর তৈরি পোষাক। ঠিকানাঃ কর্তিমারী বাজার( গ্রামীণ ব্যাংক এর নিচ তলা), রৌমারী। যোগাযোগঃ 01700-787092। ওয়েব সাইটঃ bfcbd.shop। ধন্যবাদ",
       marqueeColor: "#facc15",
       marqueeBg: "#1e1b4b"
     };
