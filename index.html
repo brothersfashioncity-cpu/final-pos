@@ -1191,8 +1191,40 @@
         }
     </script>
 </body>
-</html>den');
-        }
     </script>
 </body>
 </html>
+<!-- চলন্ত লেখা (Marquee Ticker) -->
+<style>
+  .marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #0f172a;
+    border-top: 1px solid #334155;
+    padding: 12px 0;
+    margin-top: 15px;
+    box-sizing: border-box;
+  }
+  .marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    color: #facc15;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 100%;
+    animation: scrollText 25s linear infinite;
+  }
+  .marquee-text:hover {
+    animation-play-state: paused;
+  }
+  @keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+
+<div class="marquee-wrapper">
+  <div class="marquee-text">
+    ব্রাদার্স ফ্যাশন সিটি, মাল্টি ব্রান্ড কাপর এর শো-রুম, এখানে পাবেন দেশের নাম্বার ওয়ান সকল ব্রান্ড এর তৈরি পোষাক। ঠিকানাঃ কর্তিমারী বাজার( গ্রামীণ ব্যাংক এর নিচ তলা), রৌমারী। যোগাযোগঃ ০১৭০০-৭৮৭০৯২। ওয়েব সাইটঃ bfcbd.shop। ধন্যবাদ
+  </div>
+</div>
