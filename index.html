@@ -548,8 +548,7 @@
       updateStats();
       renderCouponList();
 
-      const msg = `অভিনন্দন ${name}! ${settings.shopName}-এ কেনাকাটার জন্য আপনি পেয়েছেন একটি স্পেশাল গিফট কুপন।\nআপনার গোপন কুপন কোড: ${code}\nপুরস্কার দেখতে ও সংগ্রহ করতে নিচের লিংকে প্রবেশ করুন:\n${pageUrl}`;
-
+      const msg = `অভিনন্দন ${name}! ${settings.shopName}-এ কেনাকাটার জন্য আপনি পেয়েছেন একটি স্পেশাল গিফট কুপন।\nআপনার গোপন কুপন কোড: ${code}\nপুরস্কার দেখতে ও সংগ্রহ করতে শপ এ যোগাযোগ করুন।
       lastGeneratedData = { phone, msg };
       document.getElementById("gen-code").innerText = code;
       document.getElementById("gen-prize").innerText = selectedPrize;
